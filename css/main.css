@@ -101,7 +101,16 @@ textarea {
 
 
 
+header {
+    background-image: url(../img/Slider-1.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height:410px;
+    margin:0px;
+    width:100%;
 
+}
 
 
 
