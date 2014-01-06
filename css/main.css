@@ -19,6 +19,76 @@ html {
     line-height: 1.4;
 }
 
+.container {
+    margin: 0 auto;
+    max-width: 960px;
+    padding: 0;
+    width: 100%;
+    text-align: center;
+}
+
+nav { color: #444;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+}
+
+.menu {
+    height: 80px;
+    line-height:75px;
+    margin: 0;
+    overflow-x:auto;
+    padding: 0;
+    text-align: center;
+    white-space: nowrap;
+    }
+
+ul { margin: 0;
+    padding: 0;
+}
+
+li { display: inline-block;
+}
+.activo {
+    border-top: 5px solid #a30042;
+}
+
+a { color: #444;
+    display: inline-block;
+    margin: 0 1.2em;
+    padding:0; 
+    text-decoration: none;
+}
+a:link {}
+a:hover { color: #a30042; }
+a:active {}
+
+.logo {}
+
+header {
+    background-image: url(../img/Slider-1.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height:410px;
+    margin:0px;
+    width:100%;
+
+}
+
+section {}
+
+.proyecto {
+    background-color: red;
+    height: 230px;
+    width: 230px;
+    float: left;
+    position: static;
+    margin: 5px;
+
+}
+
+footer {}
+
 /*
  * Remove text-shadow in selection highlight: h5bp.com/i
  * These selection rule sets have to be separate.
@@ -100,17 +170,6 @@ textarea {
 
 
 
-
-header {
-    background-image: url(../img/Slider-1.jpg);
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height:410px;
-    margin:0px;
-    width:100%;
-
-}
 
 
 
