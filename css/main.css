@@ -114,10 +114,9 @@ section { text-align: center;
     margin:5px;
 }
 
-footer { background: none repeat scroll 0 0 #DDD;
+footer {
     bottom: 0;
     height: 10px;
-    border-top: 5px solid #a30042;
     display: block;
     position: relative;
 }
