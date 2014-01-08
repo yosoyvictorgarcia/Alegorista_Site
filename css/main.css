@@ -131,6 +131,16 @@ footer { background: none repeat scroll 0 0 #DDD;
     font-size: 12px;
 }
 
+#privacidad a { color: #444;
+    padding:0; 
+    text-decoration: underline;
+}
+
+#privacidad a:link {}
+#privacidad a:hover { color: #a30042; }
+#privacidad a:active {}
+
+
 #redes {
     margin: 0 25px 0 0;
     width: 120px;
@@ -144,6 +154,10 @@ footer { background: none repeat scroll 0 0 #DDD;
 }
 
 footer #clear { clear: both;
+}
+
+nav .activo {
+    border-top: 5px solid #a30042;
 }
 
 /*

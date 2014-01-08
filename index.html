@@ -85,7 +85,7 @@
         <div class="contenedor">
    
             <div id="privacidad">
-                <p class="privacidad">Alegorista © 2014 • Aviso de Privacidad</p>
+                <p class="privacidad">Alegorista © 2014 • <a href="#">Aviso de Privacidad</a></p>
             </div>
     
             <div id="redes">
@@ -96,7 +96,6 @@
     
         </div>
     </footer>
-
         <!-- Ends content here -->
 
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
@@ -114,68 +113,5 @@
             ga('create','UA-XXXXX-X');ga('send','pageview');
         </script>
 
-        <!-- SLIDER BEGINS -->
-        <script src="js/jquery.masonry.min.js"></script>
-        <script src="js/jquery.history.js"></script>
-        <script src="js/js-url.min.js"></script>
-        <script src="js/jquerypp.custom.js"></script>
-        <script src="js/gamma.js"></script>
-        <script type="text/javascript">
-            
-            $(function() {
-
-                var GammaSettings = {
-                        // order is important!
-                        viewport : [ {
-                            width : 1200,
-                            columns : 5
-                        }, {
-                            width : 900,
-                            columns : 4
-                        }, {
-                            width : 500,
-                            columns : 3
-                        }, { 
-                            width : 320,
-                            columns : 2
-                        }, { 
-                            width : 0,
-                            columns : 2
-                        } ]
-                };
-
-                Gamma.init( GammaSettings, fncallback );
-
-
-                // Example how to add more items (just a dummy):
-
-                var page = 0,
-                    items = ['<li><div data-alt="Alegorista" data-description="<h3>Alegorista</h3>" data-max-width="1800" data-max-height="1350"><div data-src="img/xxxlarge/3.jpg" data-min-width="1300"></div><div data-src="img/xxlarge/3.jpg" data-min-width="1000"></div><div data-src="img/xlarge/3.jpg" data-min-width="700"></div><div data-src="img/large/3.jpg" data-min-width="300"></div><div data-src="img/medium/3.jpg" data-min-width="200"></div><div data-src="img/small/3.jpg" data-min-width="140"></div><div data-src="img/xsmall/3.jpg"></div><noscript><img src="img/xsmall/3.jpg" alt="Alegorista"/></noscript></div></li><li><div data-alt="Alegorista" data-description="<h3>Alegorista</h3>" data-max-width="1800" data-max-height="1350"><div data-src="img/xxxlarge/3.jpg" data-min-width="1300"></div><div data-src="img/xxlarge/3.jpg" data-min-width="1000"></div><div data-src="img/xlarge/3.jpg" data-min-width="700"></div><div data-src="img/large/3.jpg" data-min-width="300"></div><div data-src="img/medium/3.jpg" data-min-width="200"></div><div data-src="img/small/3.jpg" data-min-width="140"></div><div data-src="img/xsmall/3.jpg"></div><noscript><img src="img/xsmall/3.jpg" alt="Ale"/></noscript></div></li><li><div data-alt="Alegorista" data-description="<h3> high</h3>" data-max-width="1800" data-max-height="1350"><div data-src="img/xxxlarge/3.jpg" data-min-width="1300"></div><div data-src="img/xxlarge/3.jpg" data-min-width="1000"></div><div data-src="img/xlarge/3.jpg" data-min-width="700"></div><div data-src="img/large/3.jpg" data-min-width="300"></div><div data-src="img/medium/3.jpg" data-min-width="200"></div><div data-src="img/small/3.jpg" data-min-width="140"></div><div data-src="img/xsmall/3.jpg"></div><noscript><img src="img/xsmall/3.jpg" alt="Al"/></noscript></div></li><li><div data-alt="Ale" data-description="<h3>Alegorista</h3>" data-max-width="1800" data-max-height="1350"><div data-src="img/xxxlarge/3.jpg" data-min-width="1300"></div><div data-src="img/xxlarge/3.jpg" data-min-width="1000"></div><div data-src="img/xlarge/3.jpg" data-min-width="700"></div><div data-src="img/large/3.jpg" data-min-width="300"></div><div data-src="img/medium/3.jpg" data-min-width="200"></div><div data-src="img/small/3.jpg" data-min-width="140"></div><div data-src="img/xsmall/3.jpg"></div><noscript><img src="img/xsmall/3.jpg" alt="Ale"/></noscript></div></li><li><div data-alt="Alegorista" data-description="<h3>Alegorista</h3>" data-max-width="1800" data-max-height="1350"><div data-src="img/xxxlarge/3.jpg" data-min-width="1300"></div><div data-src="img/xxlarge/3.jpg" data-min-width="1000"></div><div data-src="img/xlarge/3.jpg" data-min-width="700"></div><div data-src="img/large/3.jpg" data-min-width="300"></div><div data-src="img/medium/3.jpg" data-min-width="200"></div><div data-src="img/small/3.jpg" data-min-width="140"></div><div data-src="img/xsmall/3.jpg"></div><noscript><img src="img/xsmall/3.jpg" alt="Alegorista"/></noscript></div></li>']
-
-                function fncallback() {
-
-                    $( '#loadmore' ).show().on( 'click', function() {
-
-                        ++page;
-                        var newitems = items[page-1]
-                        if( page <= 1 ) {
-                            
-                            Gamma.add( $( newitems ) );
-
-                        }
-                        if( page === 1 ) {
-
-                            $( this ).remove();
-
-                        }
-
-                    } );
-
-                }
-
-            });
-
-        </script>
-        <!-- SLIDER ENDS -->
     </body>
 </html>
