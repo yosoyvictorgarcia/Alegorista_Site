@@ -298,7 +298,13 @@ textarea {
 
 button,
 input {
+    background-color: #CCC;
+    border: 0;
+    border-radius: 25px;
+    color: white;
+    font-size: 12px;
     line-height: normal;
+    padding: 10px 30px;
 }
 
 /**
@@ -311,7 +317,23 @@ input {
 button,
 select {
     text-transform: none;
+    background-color:#EEE; color:#FFF;
+    border: 1px solid #DDD;
+    border-radius: 25px;
+    color: #444;
+    font-size: 12px;
+    line-height: normal;
+    padding: 10px 30px;
 }
+
+button:hover {text-transform: none;
+    background-color: #e91b5c;
+    border: 0;
+    border-radius: 25px;
+    color: white;
+    font-size: 12px;
+    line-height: normal;
+    padding: 10px 30px;}
 
 /**
  * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`

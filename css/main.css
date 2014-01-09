@@ -48,7 +48,7 @@ nav { color: #444;
     font-size: 18px;
     text-align: center;
     position: static;
-    
+
 }
 
 nav .menu {
@@ -111,11 +111,22 @@ section { text-align: center;
     height: 550px;
 }
 
+section .projects {
+    background-color: green;
+    height: 1000px;
+}
+
 section h1 {
     font-size: 24px;
     font-family: 'Open Sans', sans-serif;
     font-weight: normal;
     color: #a30042;
+}
+
+#proyectos {
+    height: 900px;
+    text-align: center;
+    position: relative;
 }
 
 .project {
@@ -147,7 +158,6 @@ section h1 {
 }
 
 .center {
-    background-color:red;
     margin-bottom:40px;
     width:960px;
 }
@@ -160,6 +170,13 @@ section h1 {
     width: 180px
 }
 
+.center .proyecto {
+    float: left;
+    height: 350px;
+    margin: 5px;
+    text-align: left;
+    width: 310px
+}
 footer {
     background: none repeat scroll 0 0;
     bottom: 0;
