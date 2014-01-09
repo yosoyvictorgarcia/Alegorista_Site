@@ -1,0 +1,408 @@
+/*! HTML5 Boilerplate v4.3.0 | MIT License | http://h5bp.com/ */
+
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html {
+    color: #222;
+}
+
+html {
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+.contenedor {
+    margin:0 auto;
+    padding:0px 0;
+    width:77%;
+    clear: both;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 960px;
+    padding: 0;
+    width: 100%;
+    position: relative;
+}
+
+#nav {
+    background:#FFF;
+    height:80px;
+    width:100%; 
+}
+
+/* NAV Empieza */
+nav { color: #444;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    text-align: center;
+    position: static;
+}
+
+nav .menu {
+    height: 80px;
+    display: block;
+    line-height:75px;
+    margin: 0;
+    overflow-x:auto;
+    padding: 0;
+    text-align: center;
+    position: relative;
+    white-space: nowrap;
+    }
+
+nav ul { margin: 0;
+    padding: 0;
+}
+
+nav li { display: inline-block;
+}
+
+nav .activo {
+    border-top: 5px solid #a30042;
+}
+
+nav a { color: #444;
+    display: inline-block;
+    margin: 0 1.2em;
+    padding:0; 
+    text-decoration: none;
+}
+
+nav a:link {}
+nav a:hover { color: #a30042; }
+nav a:active {}
+
+nav .logo {}
+/* NAV Empieza */
+
+.head {width:100%; height:410px; background:#666;}
+
+header {
+    background-image: url(../img/Slider-1.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height:410px;
+    margin:0px;
+    position: static;
+    width:100%;
+}
+
+header h1 { font-size: 40px; margin: 0;}
+header p { font-size: 24px; margin: 0;}
+
+
+section { text-align: center;
+    position: relative;
+}
+
+.project {
+    width:230px;
+    height:230px;
+    background:red;
+    padding:0;
+    float:left;
+    margin:5px;
+}
+
+footer { background: none repeat scroll 0 0 #DDD;
+    bottom: 0;
+    height: 10px;
+    border-top: 5px solid #a30042;
+    display: block;
+    position: relative;
+}
+
+#privacidad {
+    width:230px;
+    padding:39px 0;
+    float:left;
+    height: 50px;
+    margin: 0 0 0 5px;
+    font-size: 12px;
+}
+
+#privacidad a { color: #444;
+    padding:0; 
+    text-decoration: underline;
+}
+
+#privacidad a:link {}
+#privacidad a:hover { color: #a30042; }
+#privacidad a:active {}
+
+
+#redes {
+    margin: 0 25px 0 0;
+    width: 120px;
+    padding:39px 0;
+    float:right;
+}
+
+#redes .redsocial {
+    float: left;
+    margin: 9px 4px 0 4px;
+}
+
+footer #clear { clear: both;
+}
+
+nav .activo {
+    border-top: 5px solid #a30042;
+}
+
+/*
+ * Remove text-shadow in selection highlight: h5bp.com/i
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #A30042;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between images, videos, audio and canvas and the bottom of
+ * their containers: h5bp.com/i/440
+ */
+
+audio,
+canvas,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Browse Happy prompt
+   ========================================================================== */
+
+.browsehappy {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide from both screenreaders and browsers: h5bp.com/u
+ */
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+/*
+ * Hide only visually, but have it available for screenreaders: h5bp.com/v
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element to be focusable
+ * when navigated to via the keyboard: h5bp.com/p
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+/*
+ * Hide visually and from screenreaders, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+       (-o-min-device-pixel-ratio: 5/4),
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid required HTTP connection: h5bp.com/r
+   ========================================================================== */
+
+@media print {
+    * {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster: h5bp.com/s */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links for images, or javascript/internal links
+     */
+
+    a[href^="javascript:"]:after,
+    a[href^="#"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group; /* h5bp.com/t */
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
