@@ -48,6 +48,7 @@ nav { color: #444;
     font-size: 18px;
     text-align: center;
     position: static;
+    
 }
 
 nav .menu {
@@ -107,6 +108,7 @@ header { width: 100%;}
 
 section { text-align: center;
     position: relative;
+    height: 550px;
 }
 
 section h1 {
@@ -126,36 +128,54 @@ section h1 {
 }
 
 .colleft { 
-    background-color: red;
     float: left;
-    width: 49%;
     position: relative;
-
+    text-align: left;
+    width: 49%;
 }
 
 .colright {
     float: left;
-    background-color: green;
-    width: 49%;
     margin-left: 10px;
     position: relative;
+    text-align: left;
+    width: 49%;
+}
 
+.colright ul {
+    padding: 0 0 0 25px;
+}
+
+.center {
+    background-color:red;
+    margin-bottom:40px;
+    width:960px;
+}
+
+.center .socio {
+    float: left;
+    height: 350px;
+    margin: 5px;
+    text-align: left;
+    width: 180px
 }
 
 footer {
+    background: none repeat scroll 0 0;
     bottom: 0;
-    height: 10px;
     display: block;
+    height: 100px;
+    margin: 0;
     position: relative;
 }
 
 #privacidad {
-    width:230px;
-    padding:20px 0;
     float:left;
+    font-size: 12px;
     height: 50px;
     margin: 0 0 0 5px;
-    font-size: 12px;
+    padding:20px 0;
+    width:230px;
 }
 
 #privacidad a { color: #444;
@@ -171,7 +191,7 @@ footer {
 #redes {
     margin: 0 25px 0 0;
     width: 120px;
-    padding:17px 0;
+    padding:5px 0;
     float:right;
 }
 
@@ -185,6 +205,16 @@ footer #clear { clear: both;
 
 nav .activo {
     border-top: 5px solid #a30042;
+}
+
+.line-footer {
+    display: block;
+    height: 0px;
+    border: 2px solid #444;
+    margin: 1em 0;
+    padding: 0;
+    width: 97%;
+    margin: 20px 10px 20px 0;
 }
 
 /*
