@@ -9,38 +9,25 @@
     <section>
         <div class="contenedor">
              <h1>CREANDO ESPACIOS</h1>
-
-             <div class="project">
-                <img src="<?php echo get_bloginfo('template_directory'); ?>/img/proyecto-1.jpg">
-             </div>
-    
-            <div class="project">
-                 <img src="<?php echo get_bloginfo('template_directory'); ?>/img/proyecto-2.jpg">
-            </div>
-    
-            <div class="project">
-                <img src="<?php echo get_bloginfo('template_directory'); ?>/img/proyecto-3.jpg">
-            </div>
-    
-            <div class="project">
-                <img src="<?php echo get_bloginfo('template_directory'); ?>/img/proyecto-4.jpg">
-            </div>
-    
-            <div class="project">
-                <img src="<?php echo get_bloginfo('template_directory'); ?>/img/proyecto-5.jpg">
-            </div>
-    
-            <div class="project">
-                <img src="<?php echo get_bloginfo('template_directory'); ?>/img/proyecto-6.jpg">
-            </div>
-    
-            <div class="project">
-                <img src="<?php echo get_bloginfo('template_directory'); ?>/img/proyecto-7.jpg">
-            </div>
-    
-            <div class="project">
-                <img src="<?php echo get_bloginfo('template_directory'); ?>/img/proyecto-8.jpg">
-            </div>
+             <?php 
+             query_posts(
+                     array(
+                         'cat' => get_cat_ID('proyecto')
+                         )
+                     );
+             if(have_posts()){
+                 while (have_posts()){
+                     the_post();
+                     $image = (has_post_thumbnail( )) ? wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID) , 'full' ) : '' ;
+                     $imageF = (isset($image[0])) ? $image[0] : get_bloginfo('template_directory').'/img/proyecto-1.jpg' ;
+                     ?>
+                      <div class="project">
+                          <img src="<?php echo $imageF; ?>" alt="<?php the_title(); ?>">
+                     </div>
+                     <?php
+                 }
+             }
+             ?>
 
         </div>
     </section>
