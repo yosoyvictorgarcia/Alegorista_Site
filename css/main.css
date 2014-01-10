@@ -20,8 +20,9 @@ html {
 }
 
 .contenedor {
+    clear: both;
     margin:0 auto;
-    padding:0px 0;
+    padding:0 0 0 0;
     width:77%;
 }
 
@@ -31,6 +32,9 @@ html {
     padding: 0;
     width: 100%;
     position: relative;
+}
+
+.borderup { border-top: 5px solid #a30042;
 }
 
 #nav {
@@ -45,6 +49,7 @@ nav { color: #444;
     font-size: 18px;
     text-align: center;
     position: static;
+
 }
 
 nav .menu {
@@ -106,6 +111,30 @@ section { text-align: center;
     position: relative;
 }
 
+section .projects {
+    background-color: green;
+}
+
+section h1 {
+    font-size: 24px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: normal;
+    color: #a30042;
+}
+
+#proyectos {
+    text-align: center;
+    position: relative;
+    margin: 20px 0 0 0;
+}
+
+#proyectos h1 {
+    font-size: 24px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: normal;
+    color: #a30042;
+}
+
 .project {
     width:230px;
     height:230px;
@@ -115,20 +144,100 @@ section { text-align: center;
     margin:5px;
 }
 
+#single {
+    text-align: center;
+    position: relative;
+    margin: 20px 0 0 0;
+}
+
+#single .colleft {
+    float: left;
+    margin: 0 0 0 10px;
+    position: relative;
+    text-align: left;
+    width: 550px;
+}
+
+#single .colleft .galeria {
+    width:175px;
+    padding:0;
+    float:left;
+    margin:4px;
+}
+
+
+#single .colright {
+    float: left;
+    margin: 0 0 0 10px;
+    position: relative;
+    text-align: left;
+    width: 390px;
+}
+
+#single .colright hr { width: 100%}
+
+#single h1 {
+    font-size: 24px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: normal;
+    color: #a30042;
+}
+
+.colleft { 
+    float: left;
+    position: relative;
+    text-align: left;
+    width: 49%;
+}
+
+.colright {
+    float: left;
+    margin-left: 10px;
+    position: relative;
+    text-align: left;
+    width: 49%;
+}
+
+.colright ul {
+    padding: 0 0 0 25px;
+}
+
+.center {
+    margin-bottom:40px;
+    width:960px;
+}
+
+.center .socio {
+    float: left;
+    height: 350px;
+    margin: 5px;
+    text-align: left;
+    width: 180px
+}
+
+.center .proyecto {
+    float: left;
+    height: 350px;
+    margin: 5px;
+    text-align: left;
+    width: 310px
+}
 footer {
+    background: none repeat scroll 0 0;
     bottom: 0;
-    height: 10px;
     display: block;
+    height: 100px;
+    margin: 20px 0 0 0;
     position: relative;
 }
 
 #privacidad {
-    width:230px;
-    padding:20px 0;
     float:left;
+    font-size: 12px;
     height: 50px;
     margin: 0 0 0 5px;
-    font-size: 12px;
+    padding:20px 0;
+    width:230px;
 }
 
 #privacidad a { color: #444;
@@ -144,7 +253,7 @@ footer {
 #redes {
     margin: 0 25px 0 0;
     width: 120px;
-    padding:17px 0;
+    padding:5px 0;
     float:right;
 }
 
@@ -158,6 +267,16 @@ footer #clear { clear: both;
 
 nav .activo {
     border-top: 5px solid #a30042;
+}
+
+.line-footer {
+    display: block;
+    height: 0px;
+    border: 2px solid #444;
+    margin: 1em 0;
+    padding: 0;
+    width: 97%;
+    margin: 20px 10px 20px 0;
 }
 
 /*
@@ -182,11 +301,13 @@ nav .activo {
 
 hr {
     display: block;
-    height: 1px;
+    height: 0px;
     border: 0;
     border-top: 1px solid #ccc;
     margin: 1em 0;
     padding: 0;
+    width: 90%;
+    margin: 0 auto 20px auto;
 }
 
 /*
