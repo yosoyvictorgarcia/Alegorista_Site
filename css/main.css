@@ -156,12 +156,10 @@ section h1 {
     position: relative;
     text-align: left;
     width: 550px;
-    background-color: red;
 }
 
 #single .colleft .galeria {
     width:175px;
-    background:red;
     padding:0;
     float:left;
     margin:4px;
