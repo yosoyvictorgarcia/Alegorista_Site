@@ -20,8 +20,9 @@ html {
 }
 
 .contenedor {
+    clear: both;
     margin:0 auto;
-    padding:0px 0;
+    padding:0 0 0 0;
     width:77%;
 }
 
@@ -108,12 +109,10 @@ header { width: 100%;}
 
 section { text-align: center;
     position: relative;
-    height: 550px;
 }
 
 section .projects {
     background-color: green;
-    height: 1000px;
 }
 
 section h1 {
@@ -124,9 +123,16 @@ section h1 {
 }
 
 #proyectos {
-    height: 900px;
     text-align: center;
     position: relative;
+    margin: 20px 0 0 0;
+}
+
+#proyectos h1 {
+    font-size: 24px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: normal;
+    color: #a30042;
 }
 
 .project {
@@ -136,6 +142,47 @@ section h1 {
     padding:0;
     float:left;
     margin:5px;
+}
+
+#single {
+    text-align: center;
+    position: relative;
+    margin: 20px 0 0 0;
+}
+
+#single .colleft {
+    float: left;
+    margin: 0 0 0 10px;
+    position: relative;
+    text-align: left;
+    width: 550px;
+    background-color: red;
+}
+
+#single .colleft .galeria {
+    width:175px;
+    background:red;
+    padding:0;
+    float:left;
+    margin:4px;
+}
+
+
+#single .colright {
+    float: left;
+    margin: 0 0 0 10px;
+    position: relative;
+    text-align: left;
+    width: 390px;
+}
+
+#single .colright hr { width: 100%}
+
+#single h1 {
+    font-size: 24px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: normal;
+    color: #a30042;
 }
 
 .colleft { 
@@ -182,7 +229,7 @@ footer {
     bottom: 0;
     display: block;
     height: 100px;
-    margin: 0;
+    margin: 20px 0 0 0;
     position: relative;
 }
 
