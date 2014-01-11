@@ -6,8 +6,9 @@
  */
 ?>
 <footer>
-        <div class="contenedor">
-   
+        <div class="contenedor">            
+
+            <hr class="line-footer">
             <div id="privacidad">
                 <p class="privacidad">Alegorista © 2014 • <a href="#" target="_blank">Aviso de Privacidad</a></p>
             </div>

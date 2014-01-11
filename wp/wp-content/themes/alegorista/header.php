@@ -45,7 +45,7 @@
             <ul class="menu">
                 <li class="<?php echo (is_home()) ? 'activo' : '' ?>"><a href="<?php echo get_bloginfo('url'); ?>"><img src="<?php echo get_bloginfo('template_directory'); ?>/img/alegorista_logo.png"></a></li>
                 <li class="<?php echo (is_page('nosotros')) ? 'activo' : '' ?>"><a href="<?php echo get_bloginfo('url'); ?>/nosotros">NOSOTROS</a></li>
-                <li><a href="<?php echo get_bloginfo('url'); ?>/proyectos">PROYECTOS</a></li>
+                <li class="<?php echo (is_page('proyectos') || is_single()) ? 'activo' : '' ?>"><a href="<?php echo get_bloginfo('url'); ?>/proyectos">PROYECTOS</a></li>
                 <li><a href="<?php echo get_bloginfo('url'); ?>/blog">BLOG</a></li>
                 <li><a href="<?php echo get_bloginfo('url'); ?>/contancto">CONTACTO</a></li>
              </ul>
@@ -61,9 +61,9 @@
     
 
     <header>
-            <div class="container demo-2">
+            
 
-            <div id="slider" class="sl-slider-wrapper">
+            
                 <?php 
                 if(is_home()){
                     query_posts(
@@ -74,34 +74,41 @@
                     );
                 }
                 ?>
-                <div class="sl-slider">
+                
                     <?php 
-                    
-                    if(have_posts()){
+                    if(have_posts()){                        
                         while(have_posts()){
                             the_post();
                             $gallery = dfi_get_featured_images($post->ID);
-                            foreach($gallery as $ki => $i){
-                                $postA = get_post($i['attachment_id']);
-                                ?>
-                                 <div class="sl-slide" data-orientation="<?php echo ($ki % 2) ? 'horizontal' : 'vertical' ?>" data-slice1-rotation="-25" data-slice2-rotation="-25" data-slice1-scale="2" data-slice2-scale="2">
-                                    <div class="sl-slide-inner">
-                                        <div class="bg-img" style="background-image: url(<?php echo $postA->guid; ?>)"></div>
-                                        <h2><?php echo $postA->post_title;?></h2>
-                                        <blockquote><p><?php echo $postA->post_content; ?></p><cite><?php echo $postA->post_excerpt; ?></cite></blockquote>
+                            if($gallery){
+                            ?>
+                            <div class="container demo-2">
+                                <div id="slider" class="sl-slider-wrapper">
+                                    <div class="sl-slider">
+                            <?php
+
+                                foreach($gallery as $ki => $i){
+                                    $postA = get_post($i['attachment_id']);
+                                    ?>
+                                     <div class="sl-slide" data-orientation="<?php echo ($ki % 2) ? 'horizontal' : 'vertical' ?>" data-slice1-rotation="-25" data-slice2-rotation="-25" data-slice1-scale="2" data-slice2-scale="2">
+                                        <div class="sl-slide-inner">
+                                            <div class="bg-img" style="background-image: url(<?php echo $postA->guid; ?>)"></div>
+                                            <h2><?php echo $postA->post_title;?></h2>
+                                            <blockquote><p><?php echo $postA->post_content; ?></p><cite><?php echo $postA->post_excerpt; ?></cite></blockquote>
+                                        </div>
                                     </div>
-                                </div>
-                                <?php
+                                    <?php
+                                }
                             }
                         }
-                    }
                    ?>
                 </div><!-- /sl-slider -->
-
-                <nav id="nav-dots" class="nav-dots">
-                    <?php
-                    if(have_posts()){
+                <?php
+                    if($gallery){
                         while(have_posts()){
+                ?>
+                <nav id="nav-dots" class="nav-dots">
+                        <?php
                             the_post();
                             foreach($gallery as $ki => $i){
                                 $postA = get_post($i['attachment_id']);
@@ -109,10 +116,12 @@
                                 <span <?php echo ($ki == 0) ? 'class="nav-dot-current"' : ''; ?> ></span>
                                 <?php
                             }
-                        }
-                    }
+                                            
                     ?>
-                </nav>
-
-            </div><!-- /slider-wrapper -->
+                    </nav>
+                    </div><!-- /slider-wrapper -->
+                </div>
+                        <?php }
+                         }
+                  } ?>
     </header>

@@ -165,7 +165,10 @@ section h1 {
     float:left;
     margin:4px;
 }
-
+#single .colleft .galeria img{
+    width: 175px;
+    height: 107px;
+}
 
 #single .colright {
     float: left;
@@ -218,10 +221,16 @@ section h1 {
 
 .center .proyecto {
     float: left;
-    height: 350px;
+    height: 400px;
     margin: 5px;
     text-align: left;
     width: 310px
+}
+.center .proyecto img{
+    width: 200px;
+}
+.center .proyecto .excerpt{
+    height: 60px;
 }
 footer {
     background: none repeat scroll 0 0;
