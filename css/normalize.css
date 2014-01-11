@@ -291,20 +291,27 @@ textarea {
     margin: 0; /* 3 */
 }
 
+input { 
+    margin:0 18px 18px 0; 
+    width: 30%;
+}
+
+textarea {
+    height: 200px;
+    margin-bottom: 20px;
+    width: 97%;
+}
+
 /**
  * Address Firefox 4+ setting `line-height` on `input` using `!important` in
  * the UA stylesheet.
  */
 
 button,
-input {
-    background-color: #CCC;
-    border: 0;
-    border-radius: 25px;
-    color: white;
+input, textarea {
+    color: #444;
     font-size: 12px;
-    line-height: normal;
-    padding: 10px 30px;
+    padding:7px; 
 }
 
 /**
