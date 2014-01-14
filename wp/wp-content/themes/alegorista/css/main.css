@@ -24,7 +24,12 @@ html {
     margin:0 auto;
     padding:0 0 0 0;
     width:77%;
+    font-size: 14px;
     max-width: 960px;
+}
+
+.contenedor h1 {
+    margin: 0 0 20px 10px;
 }
 
 .container {
@@ -33,6 +38,15 @@ html {
     padding: 0;
     width: 100%;
     position: relative;
+}
+
+.contenedor #mijas {
+    background-color:#EEE;
+    font-size: 12px;
+    margin: -10px 0 25px 10px;
+    padding: 5px;
+    text-align: left;
+    width: 98%;
 }
 
 .borderup { border-top: 5px solid #a30042;
@@ -165,9 +179,18 @@ section h1 {
     float:left;
     margin:4px;
 }
-#single .colleft .galeria img{
-    width: 175px;
-    height: 107px;
+
+
+#single .colleft .otros {
+    clear: both;
+    height: 0px;
+    margin:0 0 0 5px; 
+    width: 98%;
+    padding-top: 10px;
+}
+
+#single .colleft .otros hr {
+    width: 100%;
 }
 
 #single .colright {
@@ -185,6 +208,10 @@ section h1 {
     font-family: 'Open Sans', sans-serif;
     font-weight: normal;
     color: #a30042;
+}
+
+#single .colright h5 {
+    color: #A30042;
 }
 
 .colleft { 
@@ -221,17 +248,36 @@ section h1 {
 
 .center .proyecto {
     float: left;
-    height: 400px;
+    height: 380px;
     margin: 5px;
     text-align: left;
     width: 310px
 }
-.center .proyecto img{
-    width: 200px;
+
+.contacto {
+    margin-bottom:40px;
+    width:960px;
 }
-.center .proyecto .excerpt{
-    height: 60px;
+
+#contacto h1 {
+    font-size: 24px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: normal;
+    color: #a30042;
 }
+
+#contacto .colleft {
+    margin-bottom:40px;
+    width:315px;
+}
+
+#contacto .colleft a { color: #a30042;}
+
+#contacto .colright {
+    margin-bottom:40px;
+    width:635px;
+}
+
 footer {
     background: none repeat scroll 0 0;
     bottom: 0;
@@ -289,6 +335,17 @@ nav .activo {
     margin: 20px 10px 20px 0;
 }
 
+.floatL{
+    float: left;
+}
+
+.floatR{
+    float: right;
+}
+
+.left { text-align: left;}
+.right { text-align: right;}
+
 /*
  * Remove text-shadow in selection highlight: h5bp.com/i
  * These selection rule sets have to be separate.
@@ -316,7 +373,7 @@ hr {
     border-top: 1px solid #ccc;
     margin: 1em 0;
     padding: 0;
-    width: 90%;
+    width: 98%;
     margin: 0 auto 20px auto;
 }
 
