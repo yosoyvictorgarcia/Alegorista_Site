@@ -21,7 +21,7 @@
             if (have_posts()) {
                 while (have_posts()) {
                     the_post();
-                    $image = (has_post_thumbnail( )) ? wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID) , 'full' ) : '' ;
+                    $image = (has_post_thumbnail( )) ? wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID) , array('310','180') ) : '' ;
                     $imageF = (isset($image[0])) ? $image[0] : '' ;
                     ?>
                     <div class="proyecto">

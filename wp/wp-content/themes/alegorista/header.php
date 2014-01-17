@@ -82,7 +82,7 @@
                             $gallery = dfi_get_featured_images($post->ID);
                         }
                     }
-                    if(!$gallery){
+                   /* if(!$gallery){
                         query_posts(
                             array(
                                 'cat' => get_cat_ID('proyecto'),
@@ -95,7 +95,7 @@
                                 $gallery = dfi_get_featured_images($post->ID);
                             }
                         }
-                    }
+                    }*/
                             if($gallery){
                             ?>
                             <div class="container demo-2">
@@ -115,12 +115,9 @@
                                     </div>
                                     <?php
                                 }
-                            }
+                            
                    ?>
                 </div><!-- /sl-slider -->
-                <?php
-                    if($gallery){
-                ?>
                 <nav id="nav-dots" class="nav-dots">
                         <?php
                             the_post();
