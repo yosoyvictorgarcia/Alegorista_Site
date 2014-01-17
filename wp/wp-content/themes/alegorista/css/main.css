@@ -253,7 +253,9 @@ section h1 {
     text-align: left;
     width: 310px
 }
-
+.center .proyecto .excerpt{
+    height: 60px;
+}
 .contacto {
     margin-bottom:40px;
     width:960px;

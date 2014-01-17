@@ -322,7 +322,8 @@ input, textarea {
  */
 
 button,
-select {
+select,
+input[type=submit] {
     text-transform: none;
     background-color:#EEE; color:#FFF;
     border: 1px solid #DDD;
@@ -333,7 +334,8 @@ select {
     padding: 10px 30px;
 }
 
-button:hover {text-transform: none;
+button:hover,
+input[type=submit]:hover {text-transform: none;
     background-color: #e91b5c;
     border: 0;
     border-radius: 25px;
