@@ -24,6 +24,7 @@
         <!-- GOOGLE FONTS -->
 
         <!-- SLIDER BEGINS -->
+        
         <link rel="stylesheet" type="text/css" href="<?php echo get_bloginfo('template_directory'); ?>/css/demo.css" />
         <link rel="stylesheet" type="text/css" href="<?php echo get_bloginfo('template_directory'); ?>/css/style.css" />
         <link rel="stylesheet" type="text/css" href="<?php echo get_bloginfo('template_directory'); ?>/css/custom.css" />
@@ -32,6 +33,7 @@
             <link rel="stylesheet" type="text/css" href="<?php echo get_bloginfo('template_directory'); ?>/css/styleNoJS.css" />
         </noscript>
         <!-- SLIDER ENDS -->
+        
     </head>
     <body>
         <!--[if lt IE 8]>
@@ -63,7 +65,7 @@
     <header>
             
 
-            
+            <?php if(!is_single()){ ?>
                 <?php 
                 if(is_home()){
                     query_posts(
@@ -134,5 +136,5 @@
                 </div>
                         <?php 
                          }
-                   ?>
+            }  ?>
     </header>

@@ -27,6 +27,10 @@
         <script>window.jQuery || document.write('<script src="<?php echo get_bloginfo('template_directory'); ?>/js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
         <script src="<?php echo get_bloginfo('template_directory'); ?>/js/plugins.js"></script>
         <script src="<?php echo get_bloginfo('template_directory'); ?>/js/main.js"></script>
+        <?php if(is_single()){ ?>
+            <script type="text/javascript" src="<?php echo get_bloginfo('template_directory'); ?>/js/jquery.lightbox-0.5.js"></script>
+            <link rel="stylesheet" type="text/css" href="<?php echo get_bloginfo('template_directory'); ?>/css/jquery.lightbox-0.5.css" media="screen" />
+        <?php } ?>
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>
@@ -109,6 +113,13 @@
             });
         </script>
         <!-- SLIDER ENDS -->
+        <?php if(is_single()){ ?>
+         <script type="text/javascript">
+            $(function() {
+                $('#gallery a').lightBox();
+            });
+            </script>
+        <?php } ?>
 
     </body>
 </html>

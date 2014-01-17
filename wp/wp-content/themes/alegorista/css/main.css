@@ -151,14 +151,17 @@ section h1 {
 }
 
 .project {
-    width:230px;
-    height:230px;
+    width:310px;
+    height:180px;
     background:red;
     padding:0;
     float:left;
     margin:5px;
 }
-
+.project img{
+    width:310px;
+    height:180px;
+}
 #single {
     text-align: center;
     position: relative;
@@ -177,10 +180,14 @@ section h1 {
     width:175px;
     padding:0;
     float:left;
-    margin:4px;
+    margin:4px;    
+    cursor: pointer;
 }
 
-
+#single .colleft .galeria img{
+    width: 175px;
+    height: 107px;
+}
 #single .colleft .otros {
     clear: both;
     height: 0px;
@@ -248,10 +255,14 @@ section h1 {
 
 .center .proyecto {
     float: left;
-    height: 380px;
+    height: 350px;
     margin: 5px;
     text-align: left;
     width: 310px
+}
+.center .proyecto img{
+    width: 310px;
+    height: 180px;
 }
 .center .proyecto .excerpt{
     height: 60px;
@@ -287,6 +298,7 @@ footer {
     height: 100px;
     margin: 20px 0 0 0;
     position: relative;
+    clear: both;
 }
 
 #privacidad {

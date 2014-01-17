@@ -13,41 +13,29 @@ if(have_posts()){
         $gallery = dfi_get_featured_images($post->ID);
         $postMeta = get_post_meta($post->ID);
             ?>
+            
             <div id="single">
                 <div class="contenedor">
+                    
                     <hr>
-                    <h1><?php the_title(); ?></h1>
+                    <h1 class="left"><?php the_title(); ?></h1>
+    <div id="mijas"><strong><a href="<?php echo get_bloginfo('url'); ?>">Home</a>  /  <a href="<?php echo get_bloginfo('url'); ?>/proyectos">Proyectos </a>  </strong>/   <?php the_title(); ?></div>
                     <hr>
 
                     <div class="center">
 
-                        <div class="colleft">
+                        <div id="gallery" class="colleft">                                       
                             <?php 
                             if($gallery){
                             foreach($gallery as $ki => $i){
                                 $postA = get_post($i['attachment_id']);
                                 ?>
+                                <a href="<?php echo $postA->guid; ?>" title="">
                                 <div class="galeria"><img src="<?php echo $postA->guid; ?>"></div>
+                                </a>
                                 <?php
                             }
-                            ?>
-                            <!--<div class="galeria"><img src="img/Foto.jpg"></div>
-
-                            <div class="galeria"><img src="img/Foto.jpg"></div>
-
-                            <div class="galeria"><img src="img/Foto.jpg"></div>
-
-                            <div class="galeria"><img src="img/Foto.jpg"></div>
-
-                            <div class="galeria"><img src="img/Foto.jpg"></div>
-
-                            <div class="galeria"><img src="img/Foto.jpg"></div>
-
-                            <div class="galeria"><img src="img/Foto.jpg"></div>
-
-                            <div class="galeria"><img src="img/Foto.jpg"></div>
-
-                            <div class="galeria"><img src="img/Foto.jpg"></div>-->
+                            ?>                            
                             <?php } ?>
                         </div>
 
