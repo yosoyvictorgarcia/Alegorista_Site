@@ -28,6 +28,81 @@ html {
     max-width: 960px;
 }
 
+/* FROM */
+form#search{
+    float: right;
+    height: 40px;
+    margin: -10px 0 0 0;
+    width: 150px;
+}
+.search { 
+    padding:10px;
+    margin:3px;
+    width: 130px;
+}
+.rounded { 
+    border-radius:15px; 
+    -moz-border-radius:15px; 
+    -webkit-border-radius:15px; 
+}
+form#search[type=text]{
+    color:#bcbcbc;
+    margin: 10px;
+}
+input[type=button], input[type=button]:hover {
+    position:relative; 
+    left:-6px;
+    border:1px solid #adc5cf;
+    background: #e4f1f9; /* Old browsers */
+    background: -moz-linear-gradient(top, #e4f1f9 0%, #d5e7f3 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#e4f1f9), color-stop(100%,#d5e7f3)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #e4f1f9 0%,#d5e7f3 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #e4f1f9 0%,#d5e7f3 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #e4f1f9 0%,#d5e7f3 100%); /* IE10+ */
+    background: linear-gradient(top, #e4f1f9 0%,#d5e7f3 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e4f1f9', endColorstr='#d5e7f3',GradientType=0 ); /* IE6-9 */
+    color:#7da2aa;
+    cursor: pointer;
+}
+
+
+form#search input[type=text]{
+    border:1px solid #2a2e31;
+    background-color:#2d3035;
+    color:#FFF;
+}
+
+/* FROM */
+
+/* BLOG */
+.blog_img {
+    float: left;
+    margin: 0 20px 20px 0;
+}
+
+.post {
+    float: left;
+    margin: 0 0 0 10px;
+    position: relative;
+    text-align: left;
+    width: 100%;
+}
+
+.post img {
+    width: 400px;
+    height: 330px;
+}
+
+.post h2 {
+    color: #666;
+    font-size: 24px;
+    font-weight: 300;
+    float: left;
+    margin: 0 0 20px; 0;
+    width: 100%;
+}
+/* BLOG */
+
 .contenedor h1 {
     margin: 0 0 20px 10px;
 }
@@ -42,6 +117,7 @@ html {
 
 .contenedor #mijas {
     background-color:#EEE;
+    clear: both;
     font-size: 12px;
     margin: -10px 0 25px 10px;
     padding: 5px;
@@ -153,15 +229,16 @@ section h1 {
 .project {
     width:310px;
     height:180px;
-    background:red;
     padding:0;
     float:left;
     margin:5px;
 }
+
 .project img{
     width:310px;
     height:180px;
 }
+
 #single {
     text-align: center;
     position: relative;
@@ -180,14 +257,14 @@ section h1 {
     width:175px;
     padding:0;
     float:left;
-    margin:4px;    
-    cursor: pointer;
+    margin:4px;
 }
 
 #single .colleft .galeria img{
     width: 175px;
     height: 107px;
 }
+
 #single .colleft .otros {
     clear: both;
     height: 0px;
@@ -260,10 +337,12 @@ section h1 {
     text-align: left;
     width: 310px
 }
+
 .center .proyecto img{
     width: 310px;
     height: 180px;
 }
+
 .center .proyecto .excerpt{
     height: 60px;
 }
@@ -357,7 +436,11 @@ nav .activo {
     float: right;
 }
 
-.left { text-align: left;}
+.left {
+    float: left;
+    text-align: left;
+    width: 150px;
+}
 .right { text-align: right;}
 
 /*
