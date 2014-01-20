@@ -48,7 +48,7 @@
                 <li class="<?php echo (is_home()) ? 'activo' : '' ?>"><a href="<?php echo get_bloginfo('url'); ?>"><img src="<?php echo get_bloginfo('template_directory'); ?>/img/alegorista_logo.png"></a></li>
                 <li class="<?php echo (is_page('nosotros')) ? 'activo' : '' ?>"><a href="<?php echo get_bloginfo('url'); ?>/nosotros">NOSOTROS</a></li>
                 <li class="<?php echo (is_page('proyectos') || is_single()) ? 'activo' : '' ?>"><a href="<?php echo get_bloginfo('url'); ?>/proyectos">PROYECTOS</a></li>
-                <li ><a href="<?php echo get_bloginfo('url'); ?>/blog">BLOG</a></li>
+                <li class="<?php echo (is_page('blog')) ? 'activo' : '' ?>"><a href="<?php echo get_bloginfo('url'); ?>/blog">BLOG</a></li>
                 <li class="<?php echo (is_page('contacto')) ? 'activo' : '' ?>"><a href="<?php echo get_bloginfo('url'); ?>/contacto">CONTACTO</a></li>
              </ul>
         </div>

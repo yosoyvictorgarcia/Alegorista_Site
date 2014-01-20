@@ -22,7 +22,7 @@
                      $imageF = (isset($image[0])) ? $image[0] : get_bloginfo('template_directory').'/img/proyecto-1.jpg' ;
                      ?>
                       <div class="project">
-                          <img src="<?php echo $imageF; ?>" alt="<?php the_title(); ?>">
+                          <a href="<?php the_permalink(); ?>"><img src="<?php echo $imageF; ?>" alt="<?php the_title(); ?>"></a>
                      </div>
                      <?php
                  }
