@@ -15,7 +15,7 @@ html {
 }
 
 html {
-    font-size: 1em;
+    font-size: 1em;c
     line-height: 1.4;
 }
 
@@ -109,7 +109,7 @@ form#search input[type=text]{
 
 .container {
     margin: 0 auto;
-    max-width: 960px;
+    /*max-width: 960px;*/
     padding: 0;
     width: 100%;
     position: relative;
