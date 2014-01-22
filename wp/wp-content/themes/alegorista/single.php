@@ -49,6 +49,9 @@ if(have_posts()){
                             <p><?php the_content(); ?></p>
                             <br>
                             <hr>
+                            <div class="fb-share-button" data-href="https://www.facebook.com/Alegorista" data-type="button_count"></div>
+                            <br><br>
+                            <hr>
                         </div>
 
                     </div>

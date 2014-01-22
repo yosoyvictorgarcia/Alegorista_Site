@@ -8,7 +8,10 @@
 <?php get_header(); ?>
     <section>
         <div class="contenedor">
-             <h1>CREANDO ESPACIOS</h1>
+            <br>
+                    <hr>
+                 <h1>CREANDO ESPACIOS</h1>
+                    <hr>
              <?php 
              query_posts(
                      array(

@@ -14,9 +14,9 @@
             </div>
     
             <div id="redes">
-                <div class="redsocial"><a href="https://www.facebook.com/" target="_blank"><img src="<?php echo get_bloginfo('template_directory'); ?>/img/rs_facebook.png" target="_blank"></a></div>
+                <div class="redsocial"><a href="https://www.facebook.com/Alegorista" target="_blank"><img src="<?php echo get_bloginfo('template_directory'); ?>/img/rs_facebook.png" target="_blank"></a></div>
                 <div class="redsocial"><a href="https://twitter.com/" target="_blank"><img src="<?php echo get_bloginfo('template_directory'); ?>/img/rs_twitter.png"></a></div>
-                <div class="redsocial"><a href="http://www.pinterest.com/" target="_blank"><img src="<?php echo get_bloginfo('template_directory'); ?>/img/rs_pinterest.png"></a></div>
+                <div class="redsocial"><a href="http://www.pinterest.com/alegorista/" target="_blank"><img src="<?php echo get_bloginfo('template_directory'); ?>/img/rs_pinterest.png"></a></div>
              </div>
     
         </div>
