@@ -78,7 +78,7 @@
 		// maximum possible scale
 		maxScale : 2,
 		// slideshow on / off
-		autoplay : false,
+		autoplay : true,
 		// keyboard navigation
 		keyboard : true,
 		// time between transitions
@@ -406,7 +406,7 @@
 				width : this.size.width,
 				height : this.size.height
 			};
-			
+			console.log(cssStyle);
 			this.$el.css( cssStyle ).find( 'div.sl-content-wrapper' ).css( cssStyle );
 		
 		},
