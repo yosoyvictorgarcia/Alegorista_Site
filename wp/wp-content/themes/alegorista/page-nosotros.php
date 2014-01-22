@@ -7,9 +7,8 @@
 ?>
 <?php get_header(); ?>
    <?php  
-   if(have_posts()){
-       while(have_posts()){
-           the_post();
+   $pageNosotros = get_page_by_title( 'nosotros' );
+   if($pageNosotros){
            ?>
            <section>
             <div class="contenedor">
@@ -20,7 +19,7 @@
 
                  <div class="colleft">
                      <?php
-                     $image = (has_post_thumbnail( )) ? wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID) , 'full' ) : '' ;
+                     $image = (has_post_thumbnail( )) ? wp_get_attachment_image_src( get_post_thumbnail_id( $pageNosotros->ID) , 'full' ) : '' ;
                      $imageF = (isset($image[0])) ? $image[0] : '' ;
                      ?>
                     <img src="<?php echo $imageF; ?>"><br><br>
@@ -28,13 +27,12 @@
                  </div>
 
                  <div class="colright">
-                    <?php the_content(); ?>
+                    <?php echo $pageNosotros->post_content; ?>
                  </div>
 
             </div>
         </section> 
         <?php
-              }
           }
           ?>
         <section>
