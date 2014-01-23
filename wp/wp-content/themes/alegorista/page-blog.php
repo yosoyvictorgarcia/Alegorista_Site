@@ -39,17 +39,18 @@
             			?>
             			<div class="post">
 		                    <h2><?php echo strtoupper(get_the_title()); ?></h2>
-		                    <img class="blog_img" src="<?php echo $imageF; ?>">
-		                    <p>
-		                    	<?php the_content(); ?>
-		                    </p>
+                                    <div class="content" style="height: 400px;" >
+                                        <img class="blog_img" src="<?php echo $imageF; ?>">
+                                        <p>
+                                            <?php the_content(); ?>
+                                        </p>
 
-		                    <br>
+                                        <br>
 
-		                    <a href="<?php the_permalink(); ?>"><button>LEER MÁS</button></a>
+                                        <a href="<?php the_permalink(); ?>"><button>LEER MÁS</button></a>
 
-		                    <br><br>
-
+                                        <br><br>
+                                    </div>
 		                    <hr>
 		                    <p>Fecha: <?php the_time('j \d\e\ F \d\e\ Y'); ?></p><br>
 
